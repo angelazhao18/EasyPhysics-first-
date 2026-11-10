@@ -6,6 +6,8 @@ const coreQuiz = chapters.flatMap((chapter, index) =>
 const storageKey = "motionlab-progress-v2";
 
 let progress = { lessons: [], practice: [], best: null };
+
+// loads save state from localStorage if any; migrates data across site versions
 try {
   const saved = JSON.parse(localStorage.getItem(storageKey));
   const previous = saved ? null : JSON.parse(localStorage.getItem("motionlab-progress-v1"));
@@ -35,6 +37,7 @@ let revealed = false;
 let cardScope = null;
 const lab = { push: 10, friction: 4, mass: 2 };
 
+// saves user progress to localStorage
 function save() {
   try {
     localStorage.setItem(storageKey, JSON.stringify(progress));
@@ -272,7 +275,7 @@ function credits() {
       <h2>Developers</h2>
       <ul class="lesson-points">
         <li>Angela Zhao</li>
-        <li><strong>Joseph Benjamin Viola</strong></li>
+        <li>JB Viola</li>
       </ul>
     </section>`;
 }
@@ -349,6 +352,7 @@ main.addEventListener("change", event => {
   }
 });
 
+// handles all button clicks via reading the button's data-action attribute
 main.addEventListener("click", event => {
   const action = event.target.closest("button")?.dataset.action;
   if (!action) return;

@@ -15,5 +15,7 @@ Edit the project
 File	What to edit there
 index.html	Page structure and navigation
 styles.css	Colors, typography, and layout
-content.js	Lessons, questions, explanations, and flashcards
+extraReview.js  Extra review units
+concepts.js  Main lessons, quizzes, flashcards
+content.js	Merges above two js files
 app.js	Navigation, scoring, force lab, and progress
