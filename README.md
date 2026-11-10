@@ -13,9 +13,14 @@ OpenStax University Physics Volume 1 provides the chapter sequence. EasyPhysicsâ
 
 Edit the project
 File	What to edit there
-index.html	Page structure and navigation
-styles.css	Colors, typography, and layout
-extraReview.js  Extra review units
-concepts.js  Main lessons, quizzes, flashcards
-content.js	Merges above two js files
-app.js	Navigation, scoring, force lab, and progress
+index.html	----->   Page structure and navigation
+
+styles.css	----->   Colors, typography, and layout
+
+extraReview.js	----->  Extra review units
+
+concepts.js	----->   Main lessons, quizzes, flashcards
+
+content.js	----->   Merges above two js files
+
+app.js	----->   Navigation, scoring, force lab, and progress
